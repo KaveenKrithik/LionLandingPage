@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en" class="tw-dark">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LION'S CITY</title>
+        <meta name="description" content="Service with a Heartbeat" />
+        <link
+            rel="shortcut icon"
+            href="./assets/logo/KST_Logo.svg"
+            type="image/x-icon"
+        />
+
+        <meta property="og:title" content="LION'S CITY" />
+        <meta property="og:description" content="Service with a Heartbeat" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://github.com/KaveenKrithik" />
+        <meta property="og:image" content="" />
+
+        <link rel="stylesheet" href="css/tailwind-build.css">
+        <link rel="stylesheet" href="css/index.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+            integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-');
+        </script>
+
+    </head>
+    <body
+        class="tw-flex tw-min-h-[100vh] tw-flex-col tw-bg-[#fcfcfc] 
+            tw-text-black dark:tw-bg-black  dark:tw-text-white"
+    >
+      
+        <header
+            class="lg:tw-px-4 tw-max-w-[100vw] tw-max-w-lg:tw-mr-auto max-lg:tw-top-0 tw-fixed tw-top-4 lg:tw-left-1/2 lg:tw--translate-x-1/2 tw-z-20 tw-flex tw-h-[60px] tw-w-full 
+                    tw-text-gray-700 tw-bg-white dark:tw-text-gray-200 dark:tw-bg-[#17181b] tw-px-[3%] tw-rounded-md lg:tw-max-w-5xl tw-shadow-md dark:tw-shadow-gray-700
+                    lg:tw-justify-around lg:!tw-backdrop-blur-lg lg:tw-opacity-[0.99]" 
+        >
+            <a class="tw-flex tw-p-[4px] tw-gap-2 tw-place-items-center" href="index.html">
+               
+
+                <div class="tw-h-[60px] tw-max-w-[100px]">
+                    <img
+                        src="./assets/logo/KST_Logo.svg"
+                        alt="logo"
+                        class="tw-object-contain tw-h-full tw-w-full dark:tw-invert"
+                    />
+                </div>
+            </a>
+            <div
+                class="collapsible-header animated-collapse max-lg:tw-shadow-md"
+                id="collapsed-header-items"
+            >
+                <nav
+                    class="tw-relative tw-flex tw-h-full max-lg:tw-h-max tw-w-max tw-gap-5 tw-text-base max-lg:tw-mt-[30px] max-lg:tw-flex-col 
+                                max-lg:tw-gap-5 lg:tw-mx-auto tw-place-items-center"
+                >
+                    <a class="header-links" href="#hero"> Home </a>
+                    <a class="header-links" href="#team"> About us </a>
+                   
+                    <div class="tw-relative tw-flex tw-flex-col tw-place-items-center">
+                        <div id="nav-dropdown-toggle-0" class="max-lg:tw-max-w-fit tw-flex header-links tw-gap-1  tw-place-items-center">
+                            <span class=""> Services</span>
+                            <i class="tw-text-sm bi bi-chevron-down"></i>
+                        </div>
+                        <nav id="nav-dropdown-list-0" 
+                            data-open="false"
+                            class="tw-scale-0 tw-opacity-0  lg:tw-fixed tw-flex lg:tw-top-[80px] lg:tw-left-1/2 lg:tw--translate-x-1/2 
+                                    tw-w-[90%] tw-rounded-lg max-lg:tw-h-0 max-lg:tw-w-0
+                                    lg:tw-h-[450px] tw-overflow-hidden
+                                     tw-bg-white dark:tw-bg-[#17181B] tw-duration-300 
+                                     tw-transition-opacity tw-transition-height tw-shadow-lg tw-p-4">
+                            <div class="tw-grid max-xl:tw-flex max-xl:tw-flex-col tw-justify-around tw-grid-cols-2 tw-w-full">
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-list-columns-reverse"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Deep Cleaning</div>
+                                        <p>Get it done</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-grid-1x2-fill"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Plumbing </div>
+                                        <p>Get it done</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-globe"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">Carpentary </div>
+                                        <p>Get it Done</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-image-fill"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            Cleaning
+                                        </div>
+                                        <p>Get it done</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-calendar-range"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            Cleaning
+                                        </div>
+                                        <p class="">Get it done</p>
+                                    </div> 
+                                </a>
+
+                                <a class="header-links tw-flex tw-text-left tw-gap-4 !tw-p-4" href="#projects">
+                                    <div class="tw-font-semibold tw-text-3xl">
+                                        <i class="bi bi-translate"></i>
+                                    </div>
+                                    <div class="tw-flex tw-flex-col tw-gap-2">
+                                        <div class="tw-text-lg tw-text-black dark:tw-text-white tw-font-medium">
+                                            Electrician
+                                        </div>
+                                        <p class="">Get it done</p>
+                                    </div> 
+                                </a>
+                            </div>           
+                        </nav>
+                    </div>
+                    
+                    
+                </nav>
+                <div
+                    class="lg:tw-mx-4 tw-flex tw-place-items-center tw-gap-[20px] tw-text-base max-md:tw-w-full 
+                            max-md:tw-flex-col max-md:tw-place-content-center"
+                >
+                    <button type="button" onclick="toggleMode()" class="header-links tw-text-gray-600 dark:tw-text-gray-300" title="toggle-theme" 
+                            id="theme-toggle"> 
+                        <i class="bi bi-sun" id="toggle-mode-icon"></i>
+                    </button>
+                    <a
+                        href="contact.html"
+                        aria-label="Try Pixa Playground"
+                        class="btn tw-flex tw-gap-3 tw-px-3 tw-py-2 tw-transition-transform 
+                                    tw-duration-[0.3s] hover:tw-translate-x-2"
+                    >
+                        <span>Contact Us</span>
+                        <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <button
+                class="bi bi-list tw-absolute tw-right-3 tw-top-3 tw-z-50 tw-text-3xl tw-text-gray-500 lg:tw-hidden"
+                onclick="toggleHeader()"
+                aria-label="menu"
+                id="collapse-btn"
+            ></button>
+        </header>
+
+        <section
+            class="hero-section tw-relative tw-mt-20 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
+            id="hero-section"
+        >
+
+            <div class="tw-fixed tw-bg-[#000000af] dark:tw-bg-[#80808085] tw-top-0 tw-left-1/2 tw--translate-x-1/2 tw-z-20 tw-transition-opacity
+                tw-duration-300 tw-scale-0 tw-opacity-0 tw-p-2
+                tw-w-full tw-h-full tw-flex tw-place-content-center tw-place-items-center" id="video-container-bg">
+
+                <div class="tw-max-w-[80vw] max-lg:tw-max-w-full max-lg:tw-w-full tw-scale-0 tw-transition-transform tw-duration-500 tw-p-6 tw-rounded-xl  max-lg:tw-px-2 tw-w-full tw-gap-2 tw-shadow-md 
+                            tw-h-[90vh] max-lg:tw-h-auto max-lg:tw-min-h-[400px] tw-bg-white dark:tw-bg-[#16171A] tw-max-h-full
+                            " id="video-container">
+                    <div class="tw-w-full tw-flex">
+                        <button type="button" onclick="closeVideo()" class="tw-ml-auto tw-text-xl" title="close">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+                    </div>
+                    <div class="tw-flex tw-w-full  tw-rounded-xl tw-px-[5%] max-md:tw-px-2 tw-min-h-[300px] tw-max-h-[90%] tw-h-full">
+
+                        <div class="tw-relative tw-bg-black tw-min-w-full tw-min-h-full tw-overflow-clip tw-rounded-md">
+                            <iframe class="tw-absolute tw-top-[50%] tw--translate-y-[50%] tw-left-[50%] tw--translate-x-[50%] tw-w-full tw-h-full" 
+                                src="assets/videos/KST_vid.mp4" title="Video" frameborder="0" acceleallow="rometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+        
+                    </div>
+                </div>  
+            </div>
+
+            <div    
+                class="hero-bg-gradient tw-relative tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
+                id="hero"
+            >
+
+                <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-1/2 tw-top-[10%] tw-h-[120px] tw-w-[120px]"
+                ></div> 
+
+                <div
+                    class="tw-flex tw-flex-col tw-min-h-[60vh] tw-place-content-center tw-items-center"
+                >
+                    <h2
+                        class="reveal-up tw-text-center tw-text-7xl tw-font-semibold  tw-leading-[90px] max-lg:tw-text-4xl max-md:tw-leading-snug"
+                    >
+                        <span class="tw-font-thin tw-font-arial"> LION'S CITY </span>                     
+                    </h2>
+                    <div
+                        class="reveal-up tw-mt-8 tw-max-w-[7000px] tw-text-lg max-lg:tw-text-base tw-p-2 tw-text-center
+                         tw-text-gray-800 dark:tw-text-white max-lg:tw-max-w-full"
+                    >
+                        Service With A Heartbeat. 
+                    </div>
+
+                    <div
+                        class="reveal-up tw-mt-10 max-md:tw-flex-col tw-flex tw-place-items-center tw-gap-4"
+                    >
+
+                        <button 
+                            class="btn !tw-w-[170px] max-lg:!tw-w-[160px] !tw-rounded-xl !tw-py-4 max-lg:!tw-py-2 tw-flex tw-gap-2 tw-group !tw-bg-transparent !tw-text-black dark:!tw-text-white tw-transition-colors 
+                                        tw-duration-[0.3s] tw-border-[1px] tw-border-black dark:tw-border-white"
+
+                        
+                            <span>Get started</span>
+                            <i class="bi bi-arrow-right group-hover:tw-translate-x-1 tw-duration-300"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                
+             
+                <div
+                    class="reveal-up  tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+                    id="dashboard-container"
+                >
+                    <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"
+                    ></div>    
+
+                    <div
+                        class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
+                                lg:tw-h-[650px]  tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
+                                tw-overflow-hidden
+                                tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+                        id="dashboard"
+                    >  
+
+                        <div class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"
+                        ></div> 
+                        <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
+                            <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
+                               
+
+                                <div class="tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 
+                                            dark:tw-bg-[#171717] tw-h-full">
+                    
+                                    <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
+                                        <img
+                                            src="./assets/logo/KST_Logo.svg"
+                                            alt="logo"
+                                            class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full dark:tw-invert"
+                                        />
+                                    </div>
+
+                                    <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
+                                        <a href="#link-to-img-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-image"></i>
+                                            <span>Designs</span>
+                                        </a>
+                                        <a href="#link-to-pdf-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-file-pdf"></i>
+                                            <span>ML Models</span>
+                                        </a>
+                                        <a href="#link-to-code-gen" 
+                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <i class="bi bi-code-square"></i>
+                                            <span>Websites</span>
+                                        </a>
+                                        <a href="#projects" 
+                                            class="tw-flex tw-rounded-sm tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                                            <span>Show all</span>
+                                            <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"></i>
+                                        </a>
+                                    </div>
+
+                                    <div class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
+                                        <a href="contact.html" class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] 
+                                                                hover:!tw-bg-black hover:!tw-text-white
+                                                                dark:hover:!tw-bg-white dark:hover:!tw-text-black
+                                                                !tw-border-[1px] !tw-border-black !tw-text-black
+                                                                dark:!tw-border-white dark:!tw-text-white
+                                                                ">
+                                            React Out
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                                <div class="tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col" id="pixa-playground">
+                                    <div class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full">
+                                        <div class="tw-absolute tw-top-[20%] max-lg:tw-top-[40%] tw-left-1/2 tw--translate-x-1/2  tw-w-[150px] tw-h-[150px]">
+                                            <img src="./assets/logo/KST_Logo.svg" class="tw-w-full tw-h-full dark:tw-invert tw-object-contain tw-opacity-20"
+                                                alt="Pixa logo">
+                                        </div>
+                                        <div class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] 
+                                                    max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col" id="prompt-container">
+                                            <div class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
+                                                <h2 class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
+                                                    Try Our Project
+                                                </h2>
+                                                <div class="tw-inline tw-mt-6 max-md:tw-mt-3">
+                                                <span id="prompts-sample" ></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <form action="" id="prompt-form" onsubmit="return false;" 
+                                        class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center 
+                                                tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]">
+                                        <div class="tw-min-w-[140px] tw-min-h-[80px] max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 
+                                                    tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center">
+                                            <div class="dropdown tw-p-2 tw-rounded-md  tw-bg-[#f3f4f6] dark:tw-bg-[#171717]" id="dropdown1">
+                                                <!-- store the value of the dropdown-->
+                                                <input type="hidden" class="dropdown-input">
+                                                <button
+                                                    type="button"
+                                                    class="dropdown-toggle tw-flex tw-gap-5"
+                                                >
+                                                    <span class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/home/article1.png" 
+                                                                alt="Gpt3.5" class="dropdown-select-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-select-text">Projects</span>
+                                                    </span>
+                                                    <i class="bi bi-chevron-down tw-ml-auto lg:tw-hidden"
+                                                        ></i>
+                                                    <i class="bi bi-chevron-up tw-ml-auto lg:tw-block tw-hidden"
+                                                        ></i>
+                                                </button>
+                                                <ul class="dropdown-menu tw-shadow-md tw-bottom-[50px] max-lg:tw-top-[105%] max-lg:tw-bottom-[unset]">
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/home/integrations1.png" alt="Gpt-4o" 
+                                                                    class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">IOT</span>
+                                                    </li>
+                                                    
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/googlegemini.svg" alt="Gemini" 
+                                                            class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">Websites</span>
+                                                    </li>
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/brand-logos/meta.svg" alt="Llama" 
+                                                                    class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">ML</span>
+                                                    </li>
+                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                                            <img src="./assets/images/home/history.png" alt="Perplexity" 
+                                                                class="dropdown-menu-icon dark:tw-invert">
+                                                        </div>
+                                                        <span class="dropdown-text">Docs</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <input placeholder="I want to build a website?" 
+                                                type="text" class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500
+                                                                    dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full" 
+                                                name="prompt" >
+                                        <button type="submit" class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white" title="submit">
+                                            <i class="bi bi-arrow-up"></i>
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden tw-p-8"
+        >
+            <h2 class="reveal-up tw-text-3xl max-md:tw-text-xl">
+                Trusted by brands you love
+            </h2>
+
+            <div class="reveal-up carousel-container">
+                <div
+                    class="carousel lg:w-place-content-center tw-mt-10 tw-flex tw-w-full tw-gap-5 max-md:tw-gap-2"
+                >
+                    <!-- add the brands using your app  -->
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/google.svg"
+                            alt="Google"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/microsoft.svg"
+                            alt="Microsoft"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/adobe.svg"
+                            alt="Adobe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/airbnb.svg"
+                            alt="Airbnb"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/stripe.svg"
+                            alt="Stripe"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                    <div class="carousel-img tw-h-[30px] tw-w-[150px]">
+                        <img
+                            src="./assets/images/brand-logos/reddit.svg"
+                            alt="Reddit"
+                            class="tw-h-full tw-w-full tw-object-contain tw-grayscale tw-transition-colors hover:tw-grayscale-0"
+                            srcset=""
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+
+        <section
+            class="tw-relative tw-flex tw-max-w-[100vw] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+            id="projects"
+        >   
+
+
+            <div
+                class="tw-mt-8 tw-flex tw-flex-col tw-w-full tw-h-full tw-place-items-center tw-gap-5"
+            >
+                <div
+                    class="reveal-up tw-mt-5 tw-flex tw-flex-col tw-gap-3 tw-text-center"
+                >
+                    <h2
+                        class="tw-text-6xl tw-font-medium max-md:tw-text-3xl tw-p-2"
+                    >
+                        Our Services
+                    </h2>
+                </div>
+                <div
+                    class="tw-mt-6 tw-flex tw-flex-col tw-max-w-[1150px] max-lg:tw-max-w-full tw-h-full 
+                            tw-p-4 max-lg:tw-place-content-center tw-gap-8 "
+                >   
+
+                    <div class="max-xl:tw-flex max-xl:tw-flex-col tw-place-items-center tw-grid tw-grid-cols-3 tw-gap-8 
+                                tw-place-content-center tw-auto-rows-auto">
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a target="_blank" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                                <div class="tw-overflow-hidden tw-w-full tw-min-h-[180px] tw-h-[180px]">
+                                    <img src="./assets/images/hc.jpg" class="tw-w-full tw-object-contain tw-h-auto" 
+                                        alt="unified interface">
+                                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Home Cleaning</h2>
+                                <p class="tw-text-base tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Keep your home sparkling with our professional house cleaning. 
+                                    From dusting to mopping, we handle it all, giving you a clean and cozy space to relax.
+                                </p>
+        
+                            </a>
+                        </div>
+
+                        
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a  target="_blank" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                                <div class="tw-w-full tw-min-h-[180px] tw-h-[180px] tw-overflow-hidden">
+                                    <img src="./assets/images/dc.jpg" 
+                                        alt="API" class="tw-w-full tw-h-auto tw-object-contain">
+                                    <!-- <i class="bi bi-grid-1x2-fill"></i> -->
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Deep Cleaning</h2>
+                                <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Our deep cleaning service tackles hidden dirt, grime, and bacteria, leaving your space fresh and spotless.
+                                     We use advanced techniques to sanitize every corner, ensuring a healthier environment.
+                                </p>
+                            
+                            </a>
+                        </div>
+
+                        
+                        <div class="reveal-up tw-w-[350px] tw-h-[540px] tw-flex max-md:tw-w-full">
+                            <a href="#" target="_blank" class=" tw-relative tw-p-10 tw-transition-all tw-duration-300 tw-group/card  tw-gap-5 tw-flex 
+                                tw-flex-col tw-w-full tw-h-full  tw-bg-[#f6f7fb] dark:tw-bg-[#171717] tw-rounded-3xl 
+                                hover:tw-scale-[1.02]">
+                                <div class="tw-w-full tw-flex tw-place-contet-center tw-min-h-[180px] tw-h-[180px] tw-rounded-xl tw-overflow-hidden">
+                                    <img src="./assets/images/oc.jpeg" class="tw-w-full tw-h-auto tw-object-contain" 
+                                            alt="Prebuilt integrations">
+                                </div>
+                                <h2 class="tw-text-3xl max-md:tw-text-2xl tw-font-medium">Office Cleaning</h2>
+                                <p class="tw-leading-normal tw-text-gray-800 dark:tw-text-gray-200">
+                                    Our office cleaning service ensures a spotless, hygienic, and productive workspace. We provide thorough cleaning, including dusting, sanitizing, and waste disposal, using eco-friendly products and advanced techniques. 
+                                     
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <br>
+        <section
+            class="tw-relative tw-flex  tw-w-full tw-min-h-[110vh] max-md:tw-min-h-[80vh] tw-flex-col tw-place-content-center tw-place-items-center tw-overflow-hidden"
+        >   
+             <div class="tw-w-full max-lg:tw-max-w-full tw-place-content-center tw-items-center 
+                        tw-flex tw-flex-col tw-max-w-[80%] tw-gap-4 tw-p-4">
+               
+                <h3 class="tw-text-5xl tw-font-serif tw-text-center tw-font-medium  max-md:tw-text-3xl">
+                    Additional Services
+                </h3>
+                
+                <div class="tw-mt-8 tw-relative tw-gap-10 tw-p-4 tw-grid tw-place-items-center tw-grid-cols-3 max-lg:tw-flex max-lg:tw-flex-col">
+
+
+                    <div class="reveal-up  tw-w-[350px] tw-border-[1px] tw-h-[400px] tw-rounded-md tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] max-md:tw-w-[320px] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+
+                        <div class="tw-w-full tw-h-[250px]
+                                    tw-p-4
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <img src="./assets/images/ac.jpeg" 
+                                    alt="Prompt library" class="tw-w-auto tw-h-full tw-object-contain">
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Aircon Cleaning
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Breathe fresh, clean air with our professional aircon cleaning. We remove dust, mold, and bacteria to improve efficiency and air quality, 
+                            ensuring your AC runs smoothly and keeps your space cool.
+                        </p>
+                    </div>
+                    
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-md tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+
+                        <div class="tw-w-full tw-h-[250px]
+                                    tw-p-4
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <img src="./assets/images/plum.jpeg" 
+                                    alt="Web search" class="tw-w-auto tw-h-full tw-object-contain">
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Plumbing
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            From leak repairs to pipe installations, our expert plumbing service ensures a hassle-free and efficient water system. 
+                            We provide reliable solutions to keep your home or office running smoothly.
+                        </p>
+                    </div>
+
+                    <div class="reveal-up tw-w-[350px] max-md:tw-w-[320px] tw-border-[1px] tw-h-[400px] tw-rounded-lg tw-place-items-center tw-p-4
+                                 tw-bg-[#f2f3f4] dark:tw-bg-[#141414] dark:tw-border-[#1f2123] tw-flex tw-flex-col tw-gap-3">
+
+                        <div class="tw-w-full tw-h-[250px]
+                                    tw-p-4
+                                    tw-rounded-xl 
+                                     tw-backdrop-blur-2xl
+                                     tw-overflow-hidden tw-flex tw-place-content-center">
+                            <img src="./assets/images/elec.jpg" 
+                                    alt="Image generation" class="tw-w-auto tw-h-full tw-object-contain">
+                        </div>
+                        <h3 class="tw-text-2xl">
+                            Electrician Service
+                        </h3>
+                        <p class="tw-text-gray-700 dark:tw-text-gray-300 tw-px-4 tw-text-center tw-text-sm">
+                            Our skilled electricians provide safe and reliable solutions for all your electrical needs, from installations to repairs. 
+                            We ensure efficient wiring, lighting, and power systems for your home or office.
+                        </p>
+                    </div>
+
+                    
+        </section>
+
+       
+
+        <section
+            class="tw-flex tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-p-[2%]"
+            id="team"
+        >
+            <h3
+                class="reveal-up tw-text-4xl tw-font-medium tw-text-center max-md:tw-text-2xl"
+            >
+                ABOUT US
+            </h3>
+            <div
+                class="tw-mt-20 tw-gap-10 tw-space-y-8  max-md:tw-columns-1 lg:tw-columns-2 xl:tw-columns-3"
+            >
+            
+            <a href="https://www.linkedin.com/in/kishore-ravishankar-6447a8253/" target="_blank">
+                <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/kishorepic.png"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Kishore R</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">M.Tech, 3rd year</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Research Leader and Smart India Hackathon 2023 winner with a passion for ideathons and patent projects. Blending technical expertise with leadership to drive innovation.
+                    </p>
+                </div>
+            </a>
+                
+                
+                <a href="https://www.linkedin.com/in/tha6un/" target="_blank">
+                    <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/tharunpic.jpg"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Tharun S</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">B.Tech, 3rd year</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        Pre-final year CSE student at SRM University KTR, specializing in IoT with a strong background in full-stack development. Passionate about Machine Learning and IoT, with hands-on experience in both fields.
+                    </p>
+                </div> 
+
+                </a>
+
+
+                <a href="https://www.linkedin.com/in/suraj-s-konnur-877241313/" target="_blank">
+                    <div
+                    class="reveal-up tw-flex tw-h-fit tw-w-[350px] tw-break-inside-avoid 
+                        tw-flex-col tw-gap-4 tw-rounded-lg tw-border-[1px] 
+                        tw-bg-[#f6f7fb] dark:tw-bg-[#080808] dark:tw-border-[#1f2123] tw-p-4 max-lg:tw-w-[320px]"
+                >   
+
+                    <div class="tw-flex tw-place-items-center tw-gap-3">
+                        <div
+                            class="tw-h-[50px] tw-w-[50px] tw-overflow-hidden tw-rounded-full"
+                        >
+                            <img
+                                src="./assets/images/people/surajpic.png"
+                                class="tw-h-full tw-w-full tw-object-cover"
+                                alt="man"
+                            />
+                        </div>
+                        <div class="tw-flex tw-flex-col tw-gap-1">
+                            <div class="tw-font-semibold">Suraj S Konnur</div>
+                            <div class="tw-text-gray-700 dark:tw-text-gray-300">B.Tech, 3 year</div>
+                        </div>
+                    </div>
+
+                    <p class="tw-mt-4 tw-text-gray-800 dark:tw-text-gray-200">
+                        A dedicated 3rd-year BTech Computer Science student specializing in IoT, with hands-on experience in IoT and AI projects. Passionate about technology, Microsoft Power BI.
+                    </p>
+                </div>
+
+                </a>
+                
+
+                 
+
+                
+               
+            </div>
+        </section>
+
+
+
+        
+       
+
+        <section
+            class="tw-relative tw-flex tw-w-full tw-flex-col tw-place-content-center tw-place-items-center tw-gap-[10%] tw-p-[5%] tw-px-[10%]"
+            id="faq"
+        >   
+
+
+            <h3
+                class="tw-text-4xl tw-font-medium max-md:tw-text-2xl"
+            >
+                FAQ
+            </h3>
+            <div
+                class="tw-mt-5 tw-flex tw-min-h-[300px] tw-w-full tw-max-w-[850px] tw-flex-col tw-gap-4"
+            >
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>What's KST projects Do?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        KST projects primarily focus on assisting college students with their academic projects, providing tailored solutions to help them succeed in their coursework and beyond.
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>What types of projects can KST assist with?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        KST can assist with a variety of projects, including AI/ML, IoT, web development, mobile app development, CAD design, automation, robotics, and more, tailored to meet the specific requirements of college students.
+                    </div>
+                </div>
+                <hr>
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Do they provide customize projects?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Yes, KST offers customized projects, designed to fit the unique needs and specifications of students, ensuring a personalized and impactful learning experience. 
+                    </div>
+                </div>
+                <hr>
+
+                <div
+                    class="faq tw-w-full"
+                >
+                    <h4
+                        class="faq-accordion tw-flex tw-w-full tw-select-none tw-text-xl max-md:tw-text-lg"
+                    >
+                        <span>Do KST provide free projects?</span>
+                        <i class="bi bi-plus tw-text-xl tw-origin-center tw-duration-300 tw-transition-transform 
+                                    tw-ml-auto tw-font-semibold"></i>
+                    </h4>
+                    <div class="content max-lg:tw-text-sm">
+                        Yes, KST provides a few free templates and small projects without UI/UX, along with guidance, to help students get started on their projects.
+                    </div>
+                </div>
+                <hr>
+                
+            </div>
+            <div class="purple-bg-grad max-md:tw-hidden reveal-up tw-absolute tw-bottom-14 tw-right-[20%] 
+                                 tw-h-[150px] tw-w-[150px] tw-rounded-full"
+                ></div>
+           
+        </section>
+
+       
+       
+
+        <footer
+            class="tw-mt-auto tw-flex tw-flex-col tw-w-full tw-gap-4 tw-text-sm tw-pt-[5%] tw-pb-10 tw-px-[10%] 
+                    tw-text-black dark:tw-text-white max-md:tw-flex-col"
+                    
+        >
+            <div class="tw-flex max-md:tw-flex-col max-md:tw-gap-6 tw-gap-3 tw-w-full tw-place-content-around">
+                <div
+                    class="tw-flex tw-h-full tw-w-[250px] tw-flex-col tw-place-items-center tw-gap-6 max-md:tw-w-full"
+                >   
+                    <a href="#" class="tw-w-full tw-place-items-center tw-flex tw-flex-col tw-gap-6">
+                        <img
+                            src="./assets/logo/KST_Logo.svg"
+                            alt="logo"
+                            srcset=""
+                            class="tw-max-w-[120px] dark:tw-invert"
+                        />
+                    </a>
+                    <!-- <div class="tw-mt-3 tw-text-lg tw-font-semibold">Follow us</div> -->
+                    <div class="tw-flex tw-gap-4 tw-text-lg">
+                        <a
+                            href="https://github.com/tha6unn"
+                            aria-label="Github"
+                            target="_blank"
+                        >
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a
+                            href=#
+                            aria-label="Twitter"
+                        >
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                      
+                        <a
+                            href="https://www.instagram.com/kst_projects1/"
+                            aria-label="Instagram"
+                            target="_blank"
+                        >
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="tw-flex max-md:tw-flex-col tw-flex-wrap tw-gap-6 tw-h-full tw-w-full tw-justify-around">
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Resources</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="#faq" class="footer-link">FAQ</a>
+                            <a href="#projects" class="footer-link">Projects</a>
+                            <a href="#team" class="footer-link">Team</a>
+                            <a href="#pricing" class="footer-link">Pricing</a>
+                        </div>
+                    </div>
+
+
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Company</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="contact.html"  target  ="_blank" class="footer-link">Support channels</a>
+                            <a href="https://www.instagram.com/kst_projects1/" target="_blank" class="footer-link">Instagram</a>
+                            <a href="#" class="footer-link">Twitter</a>
+                            <a href="https://github.com/tha6unn" target="_blank" class="footer-link">Github</a>
+                        </div>
+                    </div>
+
+                    <div class="tw-flex tw-h-full tw-w-[200px] tw-flex-col tw-gap-4">
+                        <h2 class="tw-text-xl">Legal</h2>
+                        <div class="tw-flex tw-flex-col tw-gap-3">
+                            <a href="https://policies.google.com/terms?hl=en-US" class="footer-link">Terms of service</a>
+                            <a href="#footer" target="_blank" class="footer-link">Privacy Policy</a>
+                            <a target="_blank" href="https://www.google.com/aclk?sa=l&ai=DChcSEwi-rLnA6pCLAxWMbA8CHVVIAlcYABABGgJ0Yg&ae=2&aspm=1&co=1&ase=5&gclid=CjwKCAiAtNK8BhBBEiwA8wVt987c39btKD95EdVvcQc0vZDUCu9a4WKGwv8jLkxRaGMPzz-wRpvL5hoC2vQQAvD_BwE&sig=AOD64_1-Vwds7Bk2rrU9i8vCeoq0_ks-rw&q&adurl&ved=2ahUKEwjcs7PA6pCLAxXWfvUHHZPOKawQ0Qx6BAgSEAE" target="_self" class="footer-link">DCMA - Content Takedown</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="tw-mt-8">
+            <div class="tw-mt-2 tw-flex tw-gap-2 tw-flex-col tw-text-gray-700 dark:tw-text-gray-300 tw-place-items-center 
+                    tw-text-[12px] tw-w-full tw-text-center tw-place-content-around">
+                <span>Copyright &#169; 2025 | KST PROJECTS </span>
+                <span>Designed By THARUN</span>
+            </div>
+
+        </footer>
+    </body>
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"
+        integrity="sha512-B1lby8cGcAUU3GR+Fd809/ZxgHbfwJMp0jLTVfHiArTuUt++VqSlJpaJvhNtRf3NERaxDNmmxkdx2o+aHd4bvw=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/ScrollTrigger.min.js"
+        integrity="sha512-AY2+JxnBETJ0wcXnLPCcZJIJx0eimyhz3OJ55k2Jx4RtYC+XdIi2VtJQ+tP3BaTst4otlGG1TtPJ9fKrAUnRdQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js" integrity="sha512-hIlMpy2enepx9maXZF1gn0hsvPLerXoLHdb095CmRY5HG3bZfN7XPBZ14g+TUDH1aGgfLyPHmY9/zuU53smuMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./scripts/components.js"></script>
+    <script src="./index.js"></script>
+
+</html>
