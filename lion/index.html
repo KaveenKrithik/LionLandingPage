@@ -199,11 +199,6 @@
                         </button>
                     </div>
                     <div class="tw-flex tw-w-full  tw-rounded-xl tw-px-[5%] max-md:tw-px-2 tw-min-h-[300px] tw-max-h-[90%] tw-h-full">
-
-                        <div class="tw-relative tw-bg-black tw-min-w-full tw-min-h-full tw-overflow-clip tw-rounded-md">
-                            <iframe class="tw-absolute tw-top-[50%] tw--translate-y-[50%] tw-left-[50%] tw--translate-x-[50%] tw-w-full tw-h-full" 
-                                src="assets/videos/KST_vid.mp4" title="Video" frameborder="0" acceleallow="rometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        </div>
         
                     </div>
                 </div>  
@@ -258,163 +253,209 @@
                 
              
                 <div
-                    class="reveal-up  tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
-                    id="dashboard-container"
-                >
-                    <div class="purple-bg-grad  reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"
-                    ></div>    
+    class="reveal-up tw-relative tw-mt-8 tw-flex tw-w-full tw-place-content-center tw-place-items-center"
+    id="dashboard-container"
+>
+    <div class="purple-bg-grad reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[5%] tw-h-[200px] tw-w-[200px]"></div>    
 
-                    <div
-                        class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
-                                lg:tw-h-[650px]  tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
-                                tw-overflow-hidden
-                                tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
-                        id="dashboard"
-                    >  
+    <div
+        class="tw-relative tw-max-w-[80%] tw-bg-white dark:tw-bg-black tw-border-[1px] dark:tw-border-[#36393c] lg:tw-w-[1024px]
+                lg:tw-h-[650px] tw-flex tw-shadow-xl max-lg:tw-h-[450px] max-lg:tw-w-full
+                tw-overflow-hidden tw-min-w-[320px] md:tw-w-full tw-min-h-[450px] tw-rounded-xl tw-bg-transparent max-md:tw-max-w-full"
+        id="dashboard"
+    >  
+        <div class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"></div> 
+        <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
+            <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
+                <div class="tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 dark:tw-bg-[#171717] tw-h-full">
+                    <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
+                        <img
+                            src="./assets/images/logo.png"
+                            alt="logo"
+                            class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full dark:tw-invert"
+                        />
+                    </div>
 
-                        <div class="purple-bg-grad tw-max-w-[80%] reveal-up tw-absolute tw-left-1/2 tw--translate-x-1/2 tw-top-[0%] lg:tw-max-w-[1000px] tw-h-full tw-w-full"
-                        ></div> 
-                        <div class="animated-border tw-w-full tw-h-full tw-p-[2px]">
-                            <div class="tw-w-full tw-h-full tw-rounded-xl tw-overflow-hidden tw-flex">
-                               
+                    <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
+                        <a href="#link-to-deep-cleaning" class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                            <i class="bi bi-brush"></i>
+                            <span>Deep Cleaning</span>
+                        </a>
+                        <a href="#link-to-home-cleaning" class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                            <i class="bi bi-house"></i>
+                            <span>Home Cleaning</span>
+                        </a>
+                        <a href="#link-to-office-cleaning" class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                            <i class="bi bi-building"></i>
+                            <span>Office Cleaning</span>
+                        </a>
+                        <a href="#projects" class="tw-flex tw-rounded-sm tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
+                            <span>Show all</span>
+                            <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"></i>
+                        </a>
+                    </div>
 
-                                <div class="tw-min-w-[250px] max-lg:tw-hidden tw-p-2 tw-gap-2 tw-flex tw-flex-col tw-bg-gray-100 
-                                            dark:tw-bg-[#171717] tw-h-full">
-                    
-                                    <div class="tw-h-[30px] tw-w-fit tw-max-w-[100px]">
-                                        <img
-                                            src="./assets/logo/KST_Logo.svg"
-                                            alt="logo"
-                                            class="tw-object-contain tw-opacity-80 tw-h-full tw-w-full dark:tw-invert"
-                                        />
-                                    </div>
+                    <div class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
+                        <a href="contact.html" class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] 
+                                                    hover:!tw-bg-black hover:!tw-text-white
+                                                    dark:hover:!tw-bg-white dark:hover:!tw-text-black
+                                                    !tw-border-[1px] !tw-border-black !tw-text-black
+                                                    dark:!tw-border-white dark:!tw-text-white">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
 
-                                    <div class="tw-flex tw-mt-2 tw-gap-2 tw-flex-col">
-                                        <a href="#link-to-img-gen" 
-                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
-                                            <i class="bi bi-image"></i>
-                                            <span>Designs</span>
-                                        </a>
-                                        <a href="#link-to-pdf-gen" 
-                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
-                                            <i class="bi bi-file-pdf"></i>
-                                            <span>ML Models</span>
-                                        </a>
-                                        <a href="#link-to-code-gen" 
-                                            class="tw-flex tw-rounded-sm tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
-                                            <i class="bi bi-code-square"></i>
-                                            <span>Websites</span>
-                                        </a>
-                                        <a href="#projects" 
-                                            class="tw-flex tw-rounded-sm tw-group tw-gap-2 tw-p-2 dark:hover:tw-bg-[#2d2d2ddb] hover:tw-bg-gray-200">
-                                            <span>Show all</span>
-                                            <i class="bi bi-arrow-right tw-transform tw-transition-transform tw-duration-300 group-hover:tw-translate-x-1"></i>
-                                        </a>
-                                    </div>
-
-                                    <div class="tw-mt-auto tw-w-full tw-flex tw-px-6 tw-place-content-center">
-                                        <a href="contact.html" class="btn !tw-w-full !tw-bg-transparent tw-duration-[0.3s] 
-                                                                hover:!tw-bg-black hover:!tw-text-white
-                                                                dark:hover:!tw-bg-white dark:hover:!tw-text-black
-                                                                !tw-border-[1px] !tw-border-black !tw-text-black
-                                                                dark:!tw-border-white dark:!tw-text-white
-                                                                ">
-                                            React Out
-                                        </a>
-                                    </div>
-
-                                </div>
-
-                                <div class="tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col" id="pixa-playground">
-                                    <div class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full">
-                                        <div class="tw-absolute tw-top-[20%] max-lg:tw-top-[40%] tw-left-1/2 tw--translate-x-1/2  tw-w-[150px] tw-h-[150px]">
-                                            <img src="./assets/logo/KST_Logo.svg" class="tw-w-full tw-h-full dark:tw-invert tw-object-contain tw-opacity-20"
-                                                alt="Pixa logo">
-                                        </div>
-                                        <div class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] 
-                                                    max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col" id="prompt-container">
-                                            <div class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
-                                                <h2 class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
-                                                    Try Our Project
-                                                </h2>
-                                                <div class="tw-inline tw-mt-6 max-md:tw-mt-3">
-                                                <span id="prompts-sample" ></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-
-                                    <form action="" id="prompt-form" onsubmit="return false;" 
-                                        class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center 
-                                                tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]">
-                                        <div class="tw-min-w-[140px] tw-min-h-[80px] max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 
-                                                    tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center">
-                                            <div class="dropdown tw-p-2 tw-rounded-md  tw-bg-[#f3f4f6] dark:tw-bg-[#171717]" id="dropdown1">
-                                                <!-- store the value of the dropdown-->
-                                                <input type="hidden" class="dropdown-input">
-                                                <button
-                                                    type="button"
-                                                    class="dropdown-toggle tw-flex tw-gap-5"
-                                                >
-                                                    <span class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center">
-                                                        <div class="tw-w-[20px] tw-h-[20px]">
-                                                            <img src="./assets/images/home/article1.png" 
-                                                                alt="Gpt3.5" class="dropdown-select-icon dark:tw-invert">
-                                                        </div>
-                                                        <span class="dropdown-select-text">Projects</span>
-                                                    </span>
-                                                    <i class="bi bi-chevron-down tw-ml-auto lg:tw-hidden"
-                                                        ></i>
-                                                    <i class="bi bi-chevron-up tw-ml-auto lg:tw-block tw-hidden"
-                                                        ></i>
-                                                </button>
-                                                <ul class="dropdown-menu tw-shadow-md tw-bottom-[50px] max-lg:tw-top-[105%] max-lg:tw-bottom-[unset]">
-                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
-                                                        <div class="tw-w-[20px] tw-h-[20px]">
-                                                            <img src="./assets/images/home/integrations1.png" alt="Gpt-4o" 
-                                                                    class="dropdown-menu-icon dark:tw-invert">
-                                                        </div>
-                                                        <span class="dropdown-text">IOT</span>
-                                                    </li>
-                                                    
-                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
-                                                        <div class="tw-w-[20px] tw-h-[20px]">
-                                                            <img src="./assets/images/brand-logos/googlegemini.svg" alt="Gemini" 
-                                                            class="dropdown-menu-icon dark:tw-invert">
-                                                        </div>
-                                                        <span class="dropdown-text">Websites</span>
-                                                    </li>
-                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
-                                                        <div class="tw-w-[20px] tw-h-[20px]">
-                                                            <img src="./assets/images/brand-logos/meta.svg" alt="Llama" 
-                                                                    class="dropdown-menu-icon dark:tw-invert">
-                                                        </div>
-                                                        <span class="dropdown-text">ML</span>
-                                                    </li>
-                                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
-                                                        <div class="tw-w-[20px] tw-h-[20px]">
-                                                            <img src="./assets/images/home/history.png" alt="Perplexity" 
-                                                                class="dropdown-menu-icon dark:tw-invert">
-                                                        </div>
-                                                        <span class="dropdown-text">Docs</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <input placeholder="I want to build a website?" 
-                                                type="text" class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500
-                                                                    dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full" 
-                                                name="prompt" >
-                                        <button type="submit" class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white" title="submit">
-                                            <i class="bi bi-arrow-up"></i>
-                                        </button>
-                                    </form>
-                                </div>
+                <div class="tw-flex tw-w-full tw-p-4 tw-bg-white dark:tw-bg-black tw-h-full tw-flex-col" id="pixa-playground">
+                    <div class="tw-relative tw-w-full tw-flex tw-place-content-center tw-h-full">
+                        <div class="tw-absolute tw-top-[20%] max-lg:tw-top-[40%] tw-left-1/2 tw--translate-x-1/2 tw-w-[150px] tw-h-[150px]">
+                            <img src="./assets/images/logo.png" class="tw-w-full tw-h-full dark:tw-invert tw-object-contain tw-opacity-20" alt="Pixa logo">
+                        </div>
+                        <div class="prompt-container tw-overflow-y-auto tw-px-[5%] max-lg:tw-px-2 scrollbar max-lg:tw-max-h-[80%] tw-max-h-[550px] 
+                                    max-lg:tw-mt-12 tw-w-full tw-h-full tw-z-10 tw-flex tw-flex-col" id="prompt-container">
+                            <div class="tw-w-full tw-flex tw-text-center tw-flex-col tw-place-content-center">
+                                <h2 class="tw-text-4xl max-md:tw-text-2xl max-md:tw-mt-3 tw-opacity-80">
+                                    Our Cleaning Services
+                                </h2>
                             </div>
                         </div>
                     </div>
 
+                    <form action="" id="prompt-form" onsubmit="return false;" 
+                        class="tw-place-content-center tw-mt-auto tw-h-[50px] tw-p-1 tw-place-items-center 
+                                tw-justify-around tw-flex tw-gap-1 tw-bottom-2 tw-w-full tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]">
+                        <div class="tw-min-w-[140px] tw-min-h-[80px] max-lg:tw-absolute tw-z-10 tw-top-1 tw-left-1/2 max-lg:tw--translate-x-1/2 
+                                    tw-flex tw-flex-col tw-text-sm tw-gap-1 tw-place-content-center">
+                            <div class="dropdown tw-p-2 tw-rounded-md tw-bg-[#f3f4f6] dark:tw-bg-[#171717]" id="dropdown1">
+                                <!-- store the value of the dropdown-->
+                                <input type="hidden" class="dropdown-input">
+                                <button
+                                    type="button"
+                                    class="dropdown-toggle tw-flex tw-gap-5"
+                                >
+                                    <span class="tw-flex tw-w-fit tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/home/article1.png" 
+                                                alt="Deep Cleaning" class="dropdown-select-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-select-text">Deep Cleaning</span>
+                                    </span>
+                                    <i class="bi bi-chevron-down tw-ml-auto lg:tw-hidden"></i>
+                                    <i class="bi bi-chevron-up tw-ml-auto lg:tw-block tw-hidden"></i>
+                                </button>
+                                <ul class="dropdown-menu tw-shadow-md tw-bottom-[50px] max-lg:tw-top-[105%] max-lg:tw-bottom-[unset]">
+                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/home/integrations1.png" alt="Home Cleaning" 
+                                                    class="dropdown-menu-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-text">Home Cleaning</span>
+                                    </li>
+                                    
+                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/brand-logos/googlegemini.svg" alt="Office Cleaning" 
+                                            class="dropdown-menu-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-text">Office Cleaning</span>
+                                    </li>
+                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/brand-logos/meta.svg" alt="Aircon Cleaning" 
+                                                    class="dropdown-menu-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-text">Aircon Cleaning</span>
+                                    </li>
+                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/home/history.png" alt="Plumbing Services" 
+                                                class="dropdown-menu-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-text">Plumbing Services</span>
+                                    </li>
+                                    <li class="tw-flex tw-gap-2 tw-place-items-center">
+                                        <div class="tw-w-[20px] tw-h-[20px]">
+                                            <img src="./assets/images/home/history.png" alt="Electrical Services" 
+                                                class="dropdown-menu-icon dark:tw-invert">
+                                        </div>
+                                        <span class="dropdown-text">Electrical Services</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <input placeholder="I need a deep cleaning service" 
+                                type="text" class="tw-p-2 !tw-outline-none tw-bg-transparent tw-border-none tw-w-full tw-placehoder-gray-500
+                                                    dark:tw-placeholder-opacity-60 dark:tw-placeholder-gray-300 tw-max-w-[80%] tw-h-full" 
+                                name="prompt" >
+                        <button type="submit" class="btn !tw-bg-[#6366f1] !tw-p-2 !tw-px-3 !tw-text-white" title="submit">
+                            <i class="bi bi-arrow-up"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // GSAP and ScrollTrigger animations
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.utils.toArray(".reveal-up").forEach(function (elem) {
+        ScrollTrigger.create({
+            trigger: elem,
+            start: "top 80%",
+            end: "bottom 20%",
+            onEnter: function () {
+                gsap.fromTo(
+                    elem,
+                    { y: 100, autoAlpha: 0 },
+                    {
+                        duration: 1.25,
+                        y: 0,
+                        autoAlpha: 1,
+                        ease: "back",
+                        overwrite: "auto",
+                    }
+                );
+            },
+            onLeave: function () {
+                gsap.fromTo(
+                    elem,
+                    { autoAlpha: 1 },
+                    {
+                        autoAlpha: 0,
+                        overwrite: "auto",
+                    }
+                );
+            },
+            onEnterBack: function () {
+                gsap.fromTo(
+                    elem,
+                    { y: -100, autoAlpha: 0 },
+                    {
+                        duration: 1.25,
+                        y: 0,
+                        autoAlpha: 1,
+                        ease: "back",
+                        overwrite: "auto",
+                    }
+                );
+            },
+            onLeaveBack: function () {
+                gsap.fromTo(
+                    elem,
+                    { autoAlpha: 1 },
+                    {
+                        autoAlpha: 0,
+                        overwrite: "auto",
+                    }
+                );
+            },
+        });
+    });
+</script>
+                
                 </div>
             </div>
         </section>
